@@ -7,13 +7,13 @@ main:
     pdf: https://arxiv.org/pdf/2310.11207.pdf
     image: ./assets/img/llmExplainPaper.png
     notes: Preprint
-    # bibtex: https://arxiv.org/abs/2310.11207
-    bibtex: |
-      @misc{huang2023large,
-      title={Can Large Language Models Explain Themselves? A Study of LLM-Generated Self-Explanations}, 
-      author={Shiyuan Huang and Siddarth Mamidanna and Shreedhar Jangam and Yilun Zhou and Leilani H. Gilpin},
-      year={2023},
-      eprint={2310.11207},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-      }
+    bibtex: https://arxiv.org/abs/2310.11207
+    # bibtex: |
+    #   @misc{huang2023large,
+    #   title={Can Large Language Models Explain Themselves? A Study of LLM-Generated Self-Explanations}, 
+    #   author={Shiyuan Huang and Siddarth Mamidanna and Shreedhar Jangam and Yilun Zhou and Leilani H. Gilpin},
+    #   year={2023},
+    #   eprint={2310.11207},
+    #   archivePrefix={arXiv},
+    #   primaryClass={cs.CL}
+    #   }
