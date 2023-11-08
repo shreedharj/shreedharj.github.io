@@ -4,24 +4,23 @@
 
 <ul style="margin:0 0 20px;">
   <li>
+    <autocolor>UCSC Emergency Medical Services Club</autocolor>
     <a href="https://www.instagram.com/emslugs_ucsc/?hl=en">
-      <autocolor>UCSC Emergency Medical Services Club</autocolor>
       <span style="font-weight: bold;">[Link]</span>
     </a>
   </li>
 
   <li>
+    <autocolor>Certified NOLS Wilderness First Responder (WFR)</autocolor>
     <a href="https://www.nols.edu/en/wilderness-medicine/why-nols/">
-      <autocolor>Certified NOLS Wilderness First Responder (WFR)</autocolor>
       <span style="font-weight: bold;">[Link]</span>
     </a>
   </li>
 
   <li>
+    <autocolor>Eagle Scout: Troop 92</autocolor>
     <a href="https://www.troopwebhost.org/Troop92Milpitas/Index.htm">
-      <autocolor>Eagle Scout: Troop 92</autocolor>
       <span style="font-weight: bold;">[Link]</span>
     </a>
   </li>
 </ul>
-
