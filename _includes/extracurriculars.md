@@ -12,7 +12,14 @@
 
   <li>
     <a href="https://www.nols.edu/en/wilderness-medicine/why-nols/">
-      <autocolor>NOLS Wilderness First Responder (WFR) Certification</autocolor>
+      <autocolor>Certified NOLS Wilderness First Responder (WFR)</autocolor>
+      <span style="font-weight: bold;">[Link]</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="https://www.troopwebhost.org/Troop92Milpitas/Index.htm">
+      <autocolor>Eagle Scout: Troop 92</autocolor>
       <span style="font-weight: bold;">[Link]</span>
     </a>
   </li>

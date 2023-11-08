@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) in the Department of Computer Science and Engineering at UC Santa Cruz. His current research focuses on the applications of generative and explainable systems, such as Large Language Models and their trustworthiness in various domains. He works at the [AEIA Lab](https://aiea-lab.github.io/). Outside of research, Shreedhar enjoys backpacking, and practicing his wilderness EMT skills.
+Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) in the Department of Computer Science and Engineering at UC Santa Cruz. His current research at the [AEIA Lab](https://aiea-lab.github.io/) focuses on the applications of generative and explainable systems, such as Large Language Models and their trustworthiness in various domains. Outside of research, Shreedhar enjoys backpacking, and practicing his wilderness EMT skills.
 
 ## Research Interests
 
