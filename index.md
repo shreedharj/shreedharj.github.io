@@ -4,20 +4,19 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) in the Department of Computer Science and Engineering at UC Santa Cruz. His current research focuses on the applications of generative and explainable systems, such as Large Language Models and their trustworthiness in various domains. He works at the [AEIA Lab](https://aiea-lab.github.io/). Outside of research, Shreedhar enjoys backpacking, and practicing his wilderness EMT skills.
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
-
-## News
-
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **XAI (Explainable AI):** Understanding how AI works, making AI more transparent, and making sure AI can be trusted.
+- **LLMs (Large Language Models):** Ensuring that the model's responses are explainable, make sense and are reliable.
+- **Reinforcement Learning:** Teaching computers to play games and make decisions, like training a dog through incentives.
+- **Autonomous Vehicles:** Think self-driving cars that can drive themselves, like the ones you see in sci-fi movies. 
 
 {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/services.md %}
+## News
+
+- **[Oct. 2023]** I submitted my first paper!
+
+{% include_relative _includes/extracurriculars.md %}
