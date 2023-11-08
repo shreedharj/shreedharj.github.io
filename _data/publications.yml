@@ -5,6 +5,6 @@ main:
     conference_short: arXiv
     conference: arXiv preprint 2310.11207, 2023
     pdf: https://arxiv.org/pdf/2310.11207.pdf
-    bibtex: https://bib.yliu.me/MICCAI23.txt
+    bibtex: https://arxiv.org/abs/2310.11207
     image: ./assets/img/llmExplainPaper.png
     notes: Preprint
