@@ -18,5 +18,6 @@ Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](h
 ## News
 
 - **[Oct. 2023]** I submitted my first paper!
+- **[Feb. 2024]** I gave a presentation on the transformer architecture, watch it [here](https://youtu.be/eRDWBPf5kZg).
 
 {% include_relative _includes/extracurriculars.md %}
