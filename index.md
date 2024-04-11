@@ -10,8 +10,8 @@ Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](h
 
 - **XAI (Explainable AI):** Understanding how AI works, making AI more transparent, and making sure AI can be trusted.
 - **LLMs (Large Language Models):** Ensuring that the model's responses are explainable, make sense and are reliable.
-- **Reinforcement Learning:** Teaching computers to play games and make decisions, like training a dog through incentives.
-- **Autonomous Vehicles:** Think self-driving cars that can drive themselves, like the ones you see in sci-fi movies. 
+- **Reinforcement Learning:** Exploring new approaches to RL. Currently learning applications and interpretability methods of Decision Transformers.
+- **Autonomous Vehicles:** Currently on hold.
 
 {% include_relative _includes/publications.md %}
 
