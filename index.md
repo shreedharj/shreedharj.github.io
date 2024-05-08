@@ -8,9 +8,9 @@ Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](h
 
 ## Research Interests
 
-- **XAI (Explainable AI):** Understanding how AI works, making AI more transparent, and making sure AI can be trusted.
-- **LLMs (Large Language Models):** Ensuring that the model's responses are explainable, make sense and are reliable.
-- **Reinforcement Learning:** Exploring new approaches to RL. Currently learning applications and interpretability methods of Decision Transformers.
+- **XAI (Explainable AI):** Understanding how AI works, learning to make AI more transparent, and making sure AI can be trusted.
+- **LLMs (Large Language Models):** Studying model architectures. Ensuring that the model's responses are explainable.
+- **Reinforcement Learning:** Exploring new approaches to RL. Currently learning applications and interpretability methods for Decision Transformers.
 - **Autonomous Vehicles:** Currently on hold.
 
 {% include_relative _includes/publications.md %}
@@ -18,6 +18,8 @@ Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](h
 ## News
 
 - **[Oct. 2023]** I submitted my first paper!
-- **[Feb. 2024]** I gave a presentation on the transformer architecture, watch it [here](https://youtu.be/eRDWBPf5kZg).
+- **[Feb. 2024]** I gave a presentation on the transformer architecture [Link](https://youtu.be/eRDWBPf5kZg).
+- **[Apr. 2024]** I'm starting a research internship at Embry–Riddle Aeronautical University this summer. 
+- **[May. 2024]** Our paper got the UCSC Deans' Undergraduate Research Award [Link](https://dca.ue.ucsc.edu/dca/winners/2024/1605) 
 
 {% include_relative _includes/extracurriculars.md %}
