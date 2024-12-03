@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     {% if site.keywords %}
     <meta name="keywords" content="{{ site.keywords }}">
@@ -36,6 +36,45 @@
     <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
+
+    <style>
+      .blog-summary {
+        margin-bottom: 20px;
+      }
+
+      .blog-summary h2 {
+        font-size: 1.5rem;
+        color: #333; /* Adjust to match your theme */
+      }
+
+      .blog-summary small {
+        color: #666; /* Adjust muted text color */
+      }
+
+      main em {
+        font-style: italic;
+        color: #666; /* Adjust muted text color */
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      footer a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      footer a i {
+        font-size: 1.5rem;
+        color: #555; /* Adjust icon color to match the theme */
+      }
+
+      footer a:hover i {
+        color: #000; /* Change color on hover for accessibility */
+      }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -55,8 +94,8 @@
 
       <footer>
         <!-- Home Icon to Redirect to Homepage -->
-        <a href="/" style="text-decoration: none; font-size: 1.5rem; margin-top: 20px; display: block; text-align: center;">
-          <i class="fas fa-home"></i> <!-- Home Icon -->
+        <a href="/" title="Go to Homepage">
+          <i class="fas fa-home"></i>
         </a>
       </footer>
     </div>
