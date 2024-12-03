@@ -25,6 +25,10 @@ avatar: ./assets/img/shreedhar.png
 favicon: ./assets/img/ucscFavicon.png
 favicon_dark: ./assets/img/ucscFavicon.png
 
+# Markdown and Permalink Settings
+markdown: kramdown
+permalink: pretty
+
 # Blog
 collections:
   blogs:

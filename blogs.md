@@ -1,3 +1,9 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
 # Blog
 
 {% for blog in site.blogs %}
