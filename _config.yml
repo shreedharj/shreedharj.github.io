@@ -24,6 +24,11 @@ avatar: ./assets/img/shreedhar.png
 favicon: ./assets/img/ucscFavicon.png
 favicon_dark: ./assets/img/ucscFavicon.png
 
+# Blog
+collections:
+  blogs:
+    output: true
+
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
 enable_footnote: true
@@ -38,7 +43,7 @@ font: "Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-# google_analytics: UA-111540567-4
+google_analytics: UA-111540567-4
 
 # Use this project as a remote theme for GitHub Pages
 # See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
