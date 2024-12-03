@@ -19,64 +19,18 @@
 
   <!-- External Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
-
-  <!-- Custom Styles -->
-  <style>
-    .blog-summary {
-      margin-bottom: 20px;
-    }
-
-    .blog-summary h2 {
-      font-size: 1.5rem;
-      color: #333;
-    }
-
-    .blog-summary small {
-      color: #666;
-    }
-
-    main em {
-      font-style: italic;
-      color: #666;
-      margin-bottom: 10px;
-      display: block;
-    }
-
-    footer {
-      margin-top: 30px;
-      text-align: center;
-    }
-
-    footer a {
-      text-decoration: none;
-    }
-
-    footer a i {
-      font-size: 1.5rem;
-      color: #666;
-    }
-
-    footer a:hover i {
-      color: #000;
-    }
-  </style>
 </head>
 <body>
   <div class="wrapper">
     <header>
+      <!-- Show title for the index page -->
+      {% if page.content == "" %}
       <h1>{{ page.title }}</h1>
-      {% if page.date %}
-      <p><small>Published on {{ page.date | date: "%B %d, %Y" }}</small></p>
-      {% endif %}
-      {% if page.synopsis %}
-      <p><em>{{ page.synopsis }}</em></p>
       {% endif %}
     </header>
 
     <main>
-      {% if page.content %}
-      {{ content }}
-      {% else %}
+      {% if page.content == "" %}
       <!-- Render Blog Index -->
       {% for blog in site.blogs %}
       <div class="blog-summary">
@@ -86,12 +40,21 @@
       </div>
       <hr>
       {% endfor %}
+      {% else %}
+      <!-- Render Individual Blog Post -->
+      <h1>{{ page.title }}</h1>
+      {% if page.date %}
+      <p><small>Published on {{ page.date | date: "%B %d, %Y" }}</small></p>
+      {% endif %}
+      {% if page.synopsis %}
+      <p><em>{{ page.synopsis }}</em></p>
+      {% endif %}
+      {{ content }}
       {% endif %}
     </main>
 
     <footer>
-      <!-- Home Icon to Redirect to Homepage -->
-      <a href="/" title="Go to Homepage">
+      <a href="/" style="text-decoration: none;">
         <i class="fas fa-home"></i>
       </a>
     </footer>

@@ -14,9 +14,3 @@ permalink: /blog/
 </div>
 <hr>
 {% endfor %}
-
-<footer>
-  <a href="/" style="text-decoration: none; font-size: 1.5rem; margin-top: 20px; display: block; text-align: center;">
-    <i class="fas fa-home"></i> <!-- Home Icon -->
-  </a>
-</footer>
