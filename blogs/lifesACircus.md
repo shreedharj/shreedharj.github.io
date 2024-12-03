@@ -22,4 +22,4 @@ At the circus, they were selling entertainment, yes, but also an experience—an
 
 
 ```javascript
-console.log("Life’s a Circus ");
+console.log("Life’s a Circus");

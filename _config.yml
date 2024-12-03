@@ -33,6 +33,7 @@ permalink: pretty
 collections:
   blogs:
     output: true
+    permalink: /blog/:title
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
