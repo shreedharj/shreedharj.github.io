@@ -21,6 +21,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
 
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
     .blog-summary {
       margin-bottom: 20px;
     }
@@ -35,12 +51,9 @@
     }
 
     main {
-      padding: 20px;
-    }
-
-    .wrapper {
-      max-width: 800px;
-      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
     footer {
@@ -53,7 +66,6 @@
 <body>
   <div class="wrapper">
     <header>
-      <!-- Show title for the blog index -->
       <h1>{{ page.title }}</h1>
     </header>
 
