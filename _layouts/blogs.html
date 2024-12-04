@@ -19,35 +19,59 @@
 
   <!-- External Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+
+  <style>
+    .blog-summary {
+      margin-bottom: 20px;
+    }
+
+    .blog-summary h2 a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .blog-summary h2 a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
     <header>
-      {% if page.permalink == "/blog/" %}
+      <!-- Show title for the blog index -->
       <h1>{{ page.title }}</h1>
-      {% endif %}
     </header>
 
     <main>
-      {% if page.permalink == "/blog/" %}
       <!-- Render Blog Index -->
-      {{ content }}
-      {% else %}
-      <!-- Render Individual Blog Post -->
-      <h1>{{ page.title }}</h1>
-      {% if page.date %}
-      <p><small>Published on {{ page.date | date: "%B %d, %Y" }}</small></p>
-      {% endif %}
-      {% if page.synopsis %}
-      <p><em>{{ page.synopsis }}</em></p>
-      {% endif %}
-      {{ content }}
-      {% endif %}
+      {% for blog in site.blogs %}
+      <div class="blog-summary">
+        <h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2>
+        <p><small>Published on {{ blog.date | date: "%B %d, %Y" }}</small></p>
+        <p><em>{{ blog.synopsis }}</em></p>
+      </div>
+      <hr>
+      {% endfor %}
     </main>
 
     <footer>
       <a href="/" style="text-decoration: none;">
-        <i class="fas fa-home"></i>
+        <i class="fas fa-home" style="font-size: 24px;"></i>
       </a>
     </footer>
   </div>
