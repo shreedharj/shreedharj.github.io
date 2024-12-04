@@ -4,14 +4,14 @@ layout: homepage
 
 ## About Me
 
-Shreedhar Jangam is an undergraduate student advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) in the Department of Computer Science and Engineering at UC Santa Cruz. His current research at the [AEIA Lab](https://aiea-lab.github.io/) focuses on the applications of generative and explainable systems, such as Large Language Models and their trustworthiness in various domains. Outside of research, Shreedhar enjoys backpacking, and practicing his wilderness EMT skills.
+Hi  I'm an undergraduate student advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) in the Department of Computer Science and Engineering at UC Santa Cruz. My current research at the [AEIA Lab](https://aiea-lab.github.io/) focuses on the ***applications of generative and explainable systems***, such as Large Language Models and their trustworthiness in various domains. Beyond the lab, I’m exploring **Explainable Robotics and Autonomous Systems**, with a focus on integrating transparency and interpretability into robotics applications like human-centered autonomous systems and multi-agent collaboration. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
 
 ## Research Interests
 
-- **XAI (Explainable AI):** Understanding how AI works, learning to make AI more transparent, and making sure AI can be trusted.
+- **XAI (Explainable AI):** Investigating methods to make AI systems more transparent, trustworthy, and interpretable, particularly in safety-critical applications.
 - **LLMs (Large Language Models):** Studying model architectures. Ensuring that the model's responses are explainable.
-- **Reinforcement Learning:** Exploring new approaches to RL. Currently learning applications and interpretability methods for Decision Transformers.
-- **Autonomous Vehicles:** Currently on hold.
+- **Reinforcement Learning:** Developing and understanding RL algorithms. Learning applications for interpretability methods with Decision Transformers.
+- **Multi-Agent Systems:** Studying swarm robotics and distributed systems, focusing on optimizing communication, coordination, and transparency in autonomous groups.
 
 {% include_relative _includes/publications.md %}
 
