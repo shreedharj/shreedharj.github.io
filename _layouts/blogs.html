@@ -18,72 +18,142 @@
   {% endif %}
 
   <!-- External Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
+    /* Page layout fixes */
     .wrapper {
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
+      padding: 0;
+      padding-left: 0; 
+      padding-right: 0;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .main-content {
+      flex: 1;
+      overflow-y: scroll;
+      padding-bottom: 1rem;
+      padding: 0 1rem;
+    }
+
+    .main-content::-webkit-scrollbar {
+      display: none;
+    }
+    .main-content {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
 
     header {
-      text-align: center;
-      margin-bottom: 30px;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      z-index: 10;
+      width: 100%;
+    }
+
+    header h1 {
+      text-align: left;
+      margin-top: 10px;
+      margin-left: 50px;
+      white-space: nowrap;
+    }
+
+    .blog-list {
+      text-align: left;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .blog-summary:first-of-type {
+      margin-top: 150px; /* Add space only above the first post */
     }
 
     .blog-summary {
-      margin-bottom: 20px;
+      margin-top: 0; /* Prevent extra spacing between posts */
+      margin-bottom: 20px; /* Standard spacing between posts */
     }
 
-    .blog-summary h2 a {
+    .blog-summary h2 {
+      /* font-size: 1.8em; */
+      margin-bottom: 0; /* Compact spacing below the title */
+    }
+
+    .blog-summary small {
+      display: block; /* Ensure date is aligned */
+      margin-bottom: -15px; /* Compact spacing below the date */
+    }
+
+    hr {
+      /* display: none;  */
+      margin-top: -10px; /* Compact spacing above the separator */
+      margin-bottom: 10px; /* Compact spacing below the separator */
+    }
+
+    .blog-summary a {
       text-decoration: none;
-      color: #000;
+      color: inherit;
     }
 
-    .blog-summary h2 a:hover {
+    .blog-summary a:hover {
       text-decoration: underline;
+      color: inherit;
     }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
+    
     footer {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
+      text-align: left;
+      margin-left: 50px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+      position: static;
+      bottom: 0;
+      padding: 10px;
+      background-color: #fff;
+      width: 100%;
+    }
+
+    footer a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #043361; /* Match favicon color to homepage */
+      }
+
+    footer a:hover {
+      transform: scale(1.2); /* Slightly increase the size of the icon */
+      color: #043361;
     }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
+    <div class="main-content">
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
 
-    <main>
-      <!-- Render Blog Index -->
-      {% for blog in site.blogs %}
-      <div class="blog-summary">
-        <h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2>
-        <p><small>Published on {{ blog.date | date: "%B %d, %Y" }}</small></p>
-        <p><em>{{ blog.synopsis }}</em></p>
-      </div>
-      <hr>
-      {% endfor %}
-    </main>
+      <main>
+        <div class="blog-list">
+          {% for blog in site.blogs %}
+          <div class="blog-summary">
+            <h2><a href="{{ blog.url }}">{{ blog.title }}</a></h2>
+            <p><small>Published on {{ blog.date | date: "%B %d, %Y" }}</small></p>
+            <p><em>{{ blog.synopsis }}</em></p>
+          </div>
+          <hr>
+          {% endfor %}
+        </div>
+      </main>
+    </div>
 
     <footer>
       <a href="/" style="text-decoration: none;">
-        <i class="fas fa-home" style="font-size: 24px;"></i>
+        <i class="fas fa-home"></i>
       </a>
     </footer>
   </div>

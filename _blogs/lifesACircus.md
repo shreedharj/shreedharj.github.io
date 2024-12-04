@@ -1,7 +1,7 @@
 ---
-layout: blogs
-title: "Life’s a Circus "
-date: 2024-10-30
+layout: post
+title: "Life’s a Circus"
+date: 2024-11-30
 synopsis: "At Circus Caballero, I discovered that the magic isn’t just in the acts—it’s in the transitions, where ordinary moments become extraordinary through thoughtful presentation."
 ---
 
@@ -20,6 +20,3 @@ The more I thought about it, the more I realized how vital this skill is. Whethe
 
 At the circus, they were selling entertainment, yes, but also an experience—an illusion of magic woven into every second. And I left thinking that maybe, just maybe, we’re all doing the same in our own ways. We’re all trying to sell the idea of who we are, convincing others (and perhaps even ourselves) that our simplest offerings are worth more than they seem. And when done right, it doesn’t feel like a scam or a trick. It feels like art.
 
-
-```javascript
-console.log("Life’s a Circus");
