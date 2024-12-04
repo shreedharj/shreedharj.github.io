@@ -16,25 +16,30 @@ Access my webpage at [shreedharj.github.io](shreedharj.github.io)
 
 ```
 .
-├── _data                    
-|   └── publications.yml                      # the YAML file for publications
-├── _includes                    
-|   ├── publications.md                       # the Markdown file for publications
-|   └── extracurriculars.md                   # the Markdown file for services
-├── _layouts                  
-|   └── homepage.html                         #  the html template for the homepage 
+├── _blogs                                   # Directory for individual blog posts
+|   └── lifesACircus.md                     # Markdown file for the "Life's a Circus" post
+├── _data
+|   └── publications.yml                    # YAML file for publications
+├── _includes
+|   ├── extracurriculars.md                 # Markdown file for extracurricular activities
+|   └── publications.md                     # Markdown file for publications
+├── _layouts
+|   ├── blogs.html                          # HTML template for blog listing
+|   ├── homepage.html                       # HTML template for the homepage
+|   └── post.html                           # HTML template for individual posts
 ├── _sass
-|   ├── minimal-light.scss                    #  this file will be compiled into a CSS file to control the style of the page              
-|   └── minimal-light-no-dark-mode.scss       #  this file is similar to minimal-light.scss with the dark mode disabled
-├── assets                                    #  some files
-├── html_source_file                          #  compiled HTML files
-├── .gitignore                                #  this file specifies intentionally untracked files that Git should ignore
-├── CNAME                                     #  the custom domain, will be used by GitHub page sevice
-├── Gemfile                                   #  a RubyGems related file
-├── LICENSE                                   #  the license file
-├── README.md                                 #  the readme file (English)
-├── _config.yml                               #  the Jekyll configuration file, including some options of the page  
-└── index.md                                  #  the content of the index page, using Markdown
+|   ├── minimal-light.scss                  # SCSS file for light mode styles
+|   └── minimal-light-no-dark-mode.scss     # SCSS file with dark mode disabled
+├── _site                                   # Directory for generated site files
+├── assets                                  # Directory for assets (images, CSS, JS, etc.)
+├── blogs.md                                # Markdown file for the blog index page
+├── CNAME                                   # Custom domain file used by GitHub Pages
+├── Gemfile                                 # RubyGems configuration file
+├── Gemfile.lock                            # RubyGems lock file
+├── LICENSE                                 # License file
+├── README.md                               # Readme file (English)
+├── _config.yml                             # Jekyll configuration file
+└── index.md                                # Markdown file for the homepage content
 ```
 
 ## Acknowledgements
