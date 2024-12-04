@@ -1,6 +1,6 @@
 ---
 layout: blogs
-title: Shreedhar's Blog
+title: My Blog 📝
 permalink: /blog/
 ---
 
