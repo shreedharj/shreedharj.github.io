@@ -22,8 +22,8 @@ blog_link: /blog/
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
 avatar: ./assets/img/shreedhar.png
-favicon: ./assets/img/ucscFavicon.png
-favicon_dark: ./assets/img/ucscFavicon.png
+favicon: ./assets/img/shreedhar.png
+favicon_dark: ./assets/img/shreedhar.png
 
 # Markdown and Permalink Settings
 markdown: kramdown
