@@ -18,11 +18,11 @@ Hi 👋🏼 I'm an undergraduate student advised by [Prof. Leilani Gilpin](https
 ## News
 
 - **[Oct. 2023]** I submitted my first paper!
-- **[Feb. 2024]** I gave a presentation on the transformer architecture [Link](https://youtu.be/eRDWBPf5kZg).
-- **[Apr. 2024]** I'm starting a research internship at Embry–Riddle Aeronautical University (ERAU) this summer. 
-- **[May. 2024]** Our paper got the UCSC Deans' Undergraduate Research Award [Link](https://dca.ue.ucsc.edu/dca/winners/2024/1605) 
-- **[Aug. 2024]** I finished my research internship at ERAU and presented our research [Link](https://youtu.be/SqhE1SGtxtw?si=0thE9U4iBOH8Q5pY)
-- **[Jan. 2025]** I was awarded an honorable mention for the CRA Outstanding Undergraduate Researcher Award [Link](https://cra.org/about/awards/outstanding-undergraduate-researcher-award/)
+- **[Feb. 2024]** I gave a presentation on the transformer architecture **[[Link]](https://youtu.be/eRDWBPf5kZg)**/
+- **[Apr. 2024]** I'm starting a research internship at Embry–Riddle Aeronautical University (ERAU) this summer 
+- **[May. 2024]** Our paper got the UCSC Deans' Undergraduate Research Award **[[Link]](https://dca.ue.ucsc.edu/dca/winners/2024/1605)** 
+- **[Aug. 2024]** I finished my research internship at ERAU and presented our research **[[Link]](https://youtu.be/SqhE1SGtxtw?si=0thE9U4iBOH8Q5pY)**
+- **[Jan. 2025]** I was awarded an honorable mention for the CRA Outstanding Undergraduate Researcher Award **[[Link]](https://cra.org/about/awards/outstanding-undergraduate-researcher-award/)**
 - **[Feb. 2025]** I submitted a paper on reasoning model (R1 and o3mini) safety.  
 
 {% include_relative _includes/extracurriculars.md %}
