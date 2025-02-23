@@ -17,3 +17,11 @@ main:
     #   archivePrefix={arXiv},
     #   primaryClass={cs.CL}
     #   }
+  - title: "The Hidden Risks of Large Reasoning Models: A Safety Assessment of R1"
+    authors: Kaiwen Zhou, Chengzhi Liu, Xuandong Zhao, Shreedhar Jangam, Jayanth Srinivasa, Gaowen Liu, Dawn Song, Xin Eric Wang
+    conference_short: arXiv
+    conference: arXiv preprint 2502.12659, 2025
+    pdf: https://arxiv.org/pdf/2502.12659
+    image: ./assets/img/r1Eval.png
+    notes: Preprint
+    bibtex: https://arxiv.org/abs/2502.12659
