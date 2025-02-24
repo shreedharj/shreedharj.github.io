@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-Hi 👋🏼 I'm an undergraduate student advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) in the Department of Computer Science and Engineering at UC Santa Cruz. My current research at the [AEIA Lab](https://aiea-lab.github.io/) focuses on the ***applications of generative and explainable systems***, such as Large Language Models and their trustworthiness in various domains. Beyond the lab, I’m exploring **Explainable Robotics and Autonomous Systems**, with a focus on integrating transparency and interpretability into robotics applications like human-centered autonomous systems and multi-agent collaboration. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
+Hi 👋🏼 I'm an undergraduate student advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) in the Department of Computer Science and Engineering at UC Santa Cruz. My current research at the [AEIA Lab](https://aiea-lab.github.io/) focuses on the **applications of generative and explainable systems**, such as Large Language Models and their trustworthiness in various domains. Beyond the lab, I’m exploring **Explainable Robotics and Autonomous Systems**, with a focus on integrating transparency and interpretability into robotics applications like human-centered autonomous systems and multi-agent collaboration. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
 
 ## Research Interests
 
