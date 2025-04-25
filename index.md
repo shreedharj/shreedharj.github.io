@@ -16,7 +16,7 @@ Hi 👋🏼 I'm an undergraduate student advised by [Prof. Leilani Gilpin](https
 {% include_relative _includes/publications.md %}
 
 ## News
-- **[Feb. 2025]** I submitted a paper on reasoning model (R1 and o3mini) safety.  
+- **[Feb. 2025]** I submitted a paper on reasoning model (R1 and o3mini) safety [&#91;Link&#93;](https://r1-safety.github.io/).  
 - **[Jan. 2025]** I was awarded an honorable mention for the CRA Outstanding Undergraduate Researcher Award [&#91;Link&#93;](https://cra.org/about/awards/outstanding-undergraduate-researcher-award/)
 - **[Aug. 2024]** I finished my research internship at ERAU and presented our research [&#91;Link&#93;](https://youtu.be/SqhE1SGtxtw?si=0thE9U4iBOH8Q5pY)
 - **[May. 2024]** Our paper got the UCSC Deans' Undergraduate Research Award [&#91;Link&#93;](https://dca.ue.ucsc.edu/dca/winners/2024/1605)
