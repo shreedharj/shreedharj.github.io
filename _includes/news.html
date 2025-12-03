@@ -83,7 +83,7 @@ function togglePastNews() {
 <style>
 /* Inline styles to ensure toggle works and stays smooth */
 .news-block { margin-left: 8px; }
-.news-toggle { cursor: pointer; padding: 5px 0; user-select: none; display: flex; align-items: center; gap: 8px; margin: 15px 0; }
+.news-toggle { cursor: pointer; padding: 4px 0; user-select: none; display: flex; align-items: center; gap: 8px; margin: 8px 0 10px 0; }
 .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: #043361; }
 .toggle-icon { font-size: 0.9em; color: #666; transition: color 0.2s ease; }
 .toggle-text { font-size: 0.95em; color: #666; transition: color 0.2s ease; }
@@ -92,18 +92,19 @@ function togglePastNews() {
 .past-news-content { height: 0; overflow: hidden; transition: height 220ms ease; will-change: height; }
 .past-news-content.active { /* no static styles; height managed via JS */ height: auto; }
 
-h2 + h3, .past-news-content h3 { margin-top: 20px; margin-bottom: 10px; }
-.news-list { list-style: none; padding-left: 0; margin: 10px 0 20px 0; }
-.news-item { display: grid; grid-template-columns: 80px 1fr; align-items: start; column-gap: 10px; }
-.date-badge { display: flex; align-items: center; justify-content: center; background: #c4c1c1; color: #666; border-radius: 6px; padding: 4px 6px; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em; min-height: 12px; }
+h2 + h3, .past-news-content h3 { margin-top: 12px; margin-bottom: 6px; }
+.news-list { list-style: none; padding-left: 0; margin: 6px 0 12px 0; }
+.news-item { display: grid; grid-template-columns: 80px 1fr; align-items: start; column-gap: 10px; margin-bottom: 6px; }
+.date-badge { display: flex; align-items: center; justify-content: center; background: #ece9e9; color: #666; border-radius: 6px; padding: 4px 6px; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em; min-height: 10px; }
 .news-text { display: block; line-height: 1.6; }
 /* remove default list markers thoroughly */
 .news-list > li { list-style: none; }
 #news li:last-child { margin-bottom: 0; }
+.news-list li:last-child { margin-bottom: 0; }
 
 @media (prefers-color-scheme: dark) {
   .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: #043361; }
   .toggle-icon, .toggle-text { color: #aaa; }
-  .date-badge { background: #c4c1c1; color: #666; }
+  .date-badge { background: #ece9e9; color: #666; }
 }
 </style>
