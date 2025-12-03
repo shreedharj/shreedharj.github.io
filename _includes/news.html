@@ -49,3 +49,18 @@ function togglePastNews() {
   }
 }
 </script>
+
+<style>
+/* Inline styles to ensure toggle works without a full CSS rebuild */
+.news-toggle { cursor: pointer; padding: 5px 0; user-select: none; display: flex; align-items: center; gap: 8px; margin: 15px 0; }
+.news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: #043361; }
+.toggle-icon { font-size: 0.9em; color: #666; transition: color 0.3s ease; }
+.toggle-text { font-size: 0.95em; color: #666; transition: color 0.3s ease; }
+.past-news-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+.past-news-content.active { max-height: 2000px; }
+h2 + h3, .past-news-content h3 { margin-top: 20px; margin-bottom: 10px; }
+#news ul { list-style-type: none; padding-left: 0; margin: 10px 0 20px 0; }
+#news li { margin-bottom: 10px; line-height: 1.6; }
+#news li:last-child { margin-bottom: 0; }
+@media (prefers-color-scheme: dark) { .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: rgb(62, 183, 240); } .toggle-icon, .toggle-text { color: #aaa; } }
+</style>
