@@ -95,15 +95,15 @@ function togglePastNews() {
 h2 + h3, .past-news-content h3 { margin-top: 20px; margin-bottom: 10px; }
 .news-list { list-style: none; padding-left: 0; margin: 10px 0 20px 0; }
 .news-item { display: grid; grid-template-columns: 80px 1fr; align-items: start; column-gap: 10px; }
-.date-badge { display: flex; align-items: center; justify-content: center; background: #043361; color: #c4c1c1; border-radius: 6px; padding: 4px 6px; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em; min-height: 18px; }
+.date-badge { display: flex; align-items: center; justify-content: center; background: #c4c1c1; color: #666; border-radius: 6px; padding: 4px 6px; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em; min-height: 12px; }
 .news-text { display: block; line-height: 1.6; }
 /* remove default list markers thoroughly */
 .news-list > li { list-style: none; }
 #news li:last-child { margin-bottom: 0; }
 
 @media (prefers-color-scheme: dark) {
-  .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: rgb(4, 65, 93); }
+  .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: #043361; }
   .toggle-icon, .toggle-text { color: #aaa; }
-  .date-badge { background: #043361; color: #c4c1c1; }
+  .date-badge { background: #c4c1c1; color: #666; }
 }
 </style>
