@@ -4,11 +4,7 @@ layout: homepage
 
 ## About Me
 
-Hi 👋🏼 I completed my B.S. in Computer Science with a Minor in Statistics at UC Santa Cruz, Baskin Engineering. I am very fortunate to be advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) at the [AEIA Lab](https://aiea-lab.github.io/), where I studied LLM trustworthiness, and failure modes. I was also advised by [Prof. Xin (Eric) Wang](https://eric-xw.github.io/) at the [ERIC Lab](http://eric-lab.soe.ucsc.edu/people), where I worked on reasoning-model safety evaluation, and identifying unsafe internal reasoning patterns.
-
-I am currently a research intern at the National Renewable Energy Laboratory, where I work on physics-informed machine learning, system identification (SINDy, SINDy-PI), symbolic regression, and discrepancy modeling for nonlinear dynamical systems.
-
-Beyond the lab, I'm exploring how embodied systems can reason about the world, model interpretable dynamics, and act safely under uncertainty. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
+Hi 👋🏼 I completed my B.S. in Computer Science with a Minor in Statistics at UC Santa Cruz, Baskin Engineering. I am very fortunate to be advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) at the [AEIA Lab](https://aiea-lab.github.io/), where I studied LLM trustworthiness, and failure modes. I was also advised by [Prof. Xin (Eric) Wang](https://eric-xw.github.io/) at the [ERIC Lab](http://eric-lab.soe.ucsc.edu/people), where I worked on reasoning-model safety evaluation, and identifying unsafe internal reasoning patterns. I am currently a research intern at the National Renewable Energy Laboratory, where I work on physics-informed machine learning, system identification (SINDy, SINDy-PI), symbolic regression, and discrepancy modeling for nonlinear dynamical systems. Beyond the lab, I'm exploring how embodied systems can reason about the world, model interpretable dynamics, and act safely under uncertainty. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
 
 <p><strong style="color:#1769AA;">I’m currently applying to EECS and Robotics PhD programs for Fall 2026.</strong></p>
 
