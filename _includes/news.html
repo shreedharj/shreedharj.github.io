@@ -34,7 +34,7 @@
 <li class="news-item"><span class="date-badge">{{ item.date }}</span><span class="news-text">{{ item.content }}{% if item.link %} [<a href="{{ item.link }}">{{ item.link_text }}</a>]{% endif %}</span></li>
 {% endfor %}
 </ul>
-}</div>
+</div>
 {% endif %}
 {% endfor %}
 </div>
@@ -94,16 +94,16 @@ function togglePastNews() {
 
 h2 + h3, .past-news-content h3 { margin-top: 20px; margin-bottom: 10px; }
 .news-list { list-style: none; padding-left: 0; margin: 10px 0 20px 0; }
-.news-item { display: grid; grid-template-columns: 96px 1fr; align-items: start; column-gap: 12px; }
-.date-badge { display: flex; align-items: center; justify-content: center; background: #f0f0f0; color: #333; border-radius: 8px; padding: 6px 8px; font-weight: 600; font-size: 0.92em; letter-spacing: 0.02em; min-height: 32px; }
+.news-item { display: grid; grid-template-columns: 80px 1fr; align-items: start; column-gap: 10px; }
+.date-badge { display: flex; align-items: center; justify-content: center; background: #043361; color: #c4c1c1; border-radius: 6px; padding: 4px 6px; font-weight: 600; font-size: 0.9em; letter-spacing: 0.02em; min-height: 28px; }
 .news-text { display: block; line-height: 1.6; }
 /* remove default list markers thoroughly */
 .news-list > li { list-style: none; }
 #news li:last-child { margin-bottom: 0; }
 
 @media (prefers-color-scheme: dark) {
-  .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: rgb(62, 183, 240); }
+  .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: rgb(4, 65, 93); }
   .toggle-icon, .toggle-text { color: #aaa; }
-  .date-badge { background: #3a3a3a; color: #e0e0e0; }
+  .date-badge { background: #2f2f2f; color: #e0e0e0; }
 }
 </style>
