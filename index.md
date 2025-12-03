@@ -15,6 +15,6 @@ I’m excited by how embodied systems can reason about the world, learn interpre
 
 {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/news.md %}
+{% include_relative _includes/news.html %}
 
 {% include_relative _includes/extracurriculars.md %}
