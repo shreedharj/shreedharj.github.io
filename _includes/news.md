@@ -1,29 +1,54 @@
 <h2 id="news">News</h2>
 
-<div class="news-header" onclick="toggleNews()">
-  <span class="toggle-icon">▼</span>
+{% assign sorted_news = site.data.news | sort: 'year' | reverse %}
+{% assign latest_year = sorted_news[0].year %}
+
+<!-- Display latest year -->
+{% for year_data in sorted_news %}
+  {% if year_data.year == latest_year %}
+    <h3>{{ year_data.year }}</h3>
+    <ul>
+      {% for item in year_data.items %}
+        <li>
+          <strong>[{{ item.date }}]</strong> {{ item.content }}
+          {% if item.link %}
+            [<a href="{{ item.link }}">{{ item.link_text }}</a>]
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
+
+<!-- Toggle for past events -->
+<div class="news-toggle" onclick="togglePastNews()">
+  <span class="toggle-icon">▶</span>
+  <span class="toggle-text">Show past events</span>
 </div>
 
-<div id="news-content" class="news-content active">
-{% for year_data in site.data.news %}
-  <h3>{{ year_data.year }}</h3>
-  <ul>
-    {% for item in year_data.items %}
-      <li>
-        <strong>[{{ item.date }}]</strong> {{ item.content }}
-        {% if item.link %}
-          [<a href="{{ item.link }}">{{ item.link_text }}</a>]
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+<!-- Past years (hidden by default) -->
+<div id="past-news" class="past-news-content">
+{% for year_data in sorted_news %}
+  {% if year_data.year != latest_year %}
+    <h3>{{ year_data.year }}</h3>
+    <ul>
+      {% for item in year_data.items %}
+        <li>
+          <strong>[{{ item.date }}]</strong> {{ item.content }}
+          {% if item.link %}
+            [<a href="{{ item.link }}">{{ item.link_text }}</a>]
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
 </div>
 
 <script>
-function toggleNews() {
-  const content = document.getElementById('news-content');
-  const icon = document.querySelector('.news-header .toggle-icon');
+function togglePastNews() {
+  const content = document.getElementById('past-news');
+  const icon = document.querySelector('.news-toggle .toggle-icon');
   
   content.classList.toggle('active');
   

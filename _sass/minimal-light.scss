@@ -597,61 +597,73 @@ footer {
 }
 
 /* News Section Dropdown Styles */
-.news-header {
+.news-toggle {
   cursor: pointer;
   padding: 5px 0;
   user-select: none;
-  display: inline-block;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0;
 }
 
-.news-header:hover .toggle-icon {
+.news-toggle:hover .toggle-icon,
+.news-toggle:hover .toggle-text {
   color: #043361;
 }
 
 .toggle-icon {
-  font-size: 1.2em;
+  font-size: 0.9em;
   color: #666;
   transition: color 0.3s ease;
 }
 
-.news-content {
+.toggle-text {
+  font-size: 0.95em;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.past-news-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
 
-.news-content.active {
+.past-news-content.active {
   max-height: 2000px;
 }
 
-.news-content h3 {
+h2 + h3,
+.past-news-content h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.news-content ul {
+#news ul {
   list-style-type: none;
   padding-left: 0;
   margin: 10px 0 20px 0;
 }
 
-.news-content li {
+#news li {
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
-.news-content li:last-child {
+#news li:last-child {
   margin-bottom: 0;
 }
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
-  .news-header:hover .toggle-icon {
+  .news-toggle:hover .toggle-icon,
+  .news-toggle:hover .toggle-text {
     color: rgb(62, 183, 240);
   }
   
-  .toggle-icon {
+  .toggle-icon,
+  .toggle-text {
     color: #aaa;
   }
 }
