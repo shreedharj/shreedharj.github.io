@@ -11,7 +11,7 @@ Hi 👋🏼 I completed my B.S. in Computer Science with a Minor in Statistics a
 
 ## Research Interests
 
-- **Safe & Interpretable Robotics::** Transparent world models, memory-based manipulation, and interpretable visuomotor control.
+- **Safe & Interpretable Robotics:** Transparent world models, memory-based manipulation, and interpretable visuomotor control.
 - **LLM & Reasoning Safety:** Understanding hidden reasoning failures and evaluating generative models under adversarial prompting.
 - **Reinforcement Learning:** Developing and understanding RL algorithms. Learning applications for interpretability methods with Decision Transformers.
 - **Physics-Informed ML:** SINDy/SINDy-PI, symbolic regression, and residual dynamics modeling for control.
