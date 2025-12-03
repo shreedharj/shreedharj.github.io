@@ -9,7 +9,7 @@
 <h3>{{ year_data.year }}</h3>
 <ul>
 {% for item in year_data.items %}
-<li><strong>[{{ item.date }}]</strong> {{ item.content }}{% if item.link %} [<a href="{{ item.link }}">{{ item.link_text }}</a>]{% endif %}</li>
+<li class="news-item"><span class="date-badge">{{ item.date }}</span> <span class="news-text">{{ item.content }}{% if item.link %} [<a href="{{ item.link }}">{{ item.link_text }}</a>]{% endif %}</span></li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -28,7 +28,7 @@
 <h3>{{ year_data.year }}</h3>
 <ul>
 {% for item in year_data.items %}
-<li><strong>[{{ item.date }}]</strong> {{ item.content }}{% if item.link %} [<a href="{{ item.link }}">{{ item.link_text }}</a>]{% endif %}</li>
+<li class="news-item"><span class="date-badge">{{ item.date }}</span> <span class="news-text">{{ item.content }}{% if item.link %} [<a href="{{ item.link }}">{{ item.link_text }}</a>]{% endif %}</span></li>
 {% endfor %}
 </ul>
 {% endif %}
@@ -40,6 +40,7 @@
 function togglePastNews() {
   var content = document.getElementById('past-news');
   var icon = document.querySelector('.news-toggle .toggle-icon');
+  var text = document.querySelector('.news-toggle .toggle-text');
   if (!content || !icon) return;
 
   var isOpen = content.classList.contains('active');
@@ -52,6 +53,7 @@ function togglePastNews() {
     content.style.height = '0px';
     content.classList.remove('active');
     icon.textContent = '▶';
+    if (text) text.textContent = 'Show past events';
   } else {
     // Expand: from 0 to scrollHeight
     content.classList.add('active');
@@ -61,6 +63,7 @@ function togglePastNews() {
       content.style.height = content.scrollHeight + 'px';
     });
     icon.textContent = '▼';
+    if (text) text.textContent = 'Hide past events';
   }
 
   // After transition ends, remove explicit height to allow responsive content
@@ -75,6 +78,7 @@ function togglePastNews() {
 
 <style>
 /* Inline styles to ensure toggle works and stays smooth */
+.news-block { margin-left: 8px; }
 .news-toggle { cursor: pointer; padding: 5px 0; user-select: none; display: flex; align-items: center; gap: 8px; margin: 15px 0; }
 .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: #043361; }
 .toggle-icon { font-size: 0.9em; color: #666; transition: color 0.2s ease; }
@@ -87,10 +91,14 @@ function togglePastNews() {
 h2 + h3, .past-news-content h3 { margin-top: 20px; margin-bottom: 10px; }
 #news ul { list-style-type: none; padding-left: 0; margin: 10px 0 20px 0; }
 #news li { margin-bottom: 10px; line-height: 1.6; }
+#news .news-item { display: flex; align-items: center; gap: 10px; }
+.date-badge { display: inline-block; background: #e9e9e9; color: #333; border-radius: 6px; padding: 6px 10px; font-weight: 600; font-size: 0.92em; letter-spacing: 0.02em; }
+.news-text { display: inline-block; }
 #news li:last-child { margin-bottom: 0; }
 
 @media (prefers-color-scheme: dark) {
   .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: rgb(62, 183, 240); }
   .toggle-icon, .toggle-text { color: #aaa; }
+  .date-badge { background: #2a2a2a; color: #e0e0e0; }
 }
 </style>
