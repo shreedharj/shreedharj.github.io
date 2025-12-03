@@ -23,6 +23,8 @@
       link_text: "Link"
     - date: "April"
       content: "I'm starting a research internship at Embry–Riddle Aeronautical University this summer."
+    - date: "Test"
+      content: "Test"
 
 - year: 2023
   items:
