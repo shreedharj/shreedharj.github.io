@@ -1,0 +1,30 @@
+- year: 2025
+  items:
+    - date: "Jun. 2025"
+      content: "I began my internship at National Renewable Energy Laboratory in Golden, Colorado."
+    - date: "Feb. 2025"
+      content: "I submitted a paper on reasoning model (R1 and o3mini) safety"
+      link: "https://r1-safety.github.io/"
+      link_text: "Link"
+    - date: "Jan. 2025"
+      content: "I was awarded an honorable mention for the CRA Outstanding Undergraduate Researcher Award"
+      link: "https://cra.org/about/awards/outstanding-undergraduate-researcher-award/"
+      link_text: "Link"
+
+- year: 2024
+  items:
+    - date: "Aug. 2024"
+      content: "I finished my research internship at ERAU and presented our research"
+      link: "https://youtu.be/SqhE1SGtxtw?si=0thE9U4iBOH8Q5pY"
+      link_text: "Link"
+    - date: "May. 2024"
+      content: "Our paper got the UCSC Deans' Undergraduate Research Award"
+      link: "https://dca.ue.ucsc.edu/dca/winners/2024/1605"
+      link_text: "Link"
+    - date: "Apr. 2024"
+      content: "I'm starting a research internship at Embry–Riddle Aeronautical University this summer."
+
+- year: 2023
+  items:
+    - date: "Oct. 2023"
+      content: "I submitted my first paper!"

@@ -597,81 +597,58 @@ footer {
 }
 
 /* News Section Dropdown Styles */
-.news-container {
-  margin-top: 20px;
-}
-
-.news-year {
-  margin-bottom: 15px;
-}
-
-.year-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.news-header {
   cursor: pointer;
-  padding: 10px 15px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 5px 0;
   user-select: none;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.year-header:hover {
-  background-color: #e8e8e8;
-}
-
-.year-header h3 {
-  margin: 0;
-  font-size: 1.3em;
-  color: #333;
+.news-header:hover .toggle-icon {
+  color: #043361;
 }
 
 .toggle-icon {
-  font-size: 0.9em;
+  font-size: 1.2em;
   color: #666;
-  transition: transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
-.year-content {
+.news-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding: 0 15px;
+  transition: max-height 0.5s ease;
 }
 
-.year-content.active {
-  max-height: 1000px;
-  padding: 10px 15px;
+.news-content.active {
+  max-height: 2000px;
 }
 
-.year-content ul {
+.news-content h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.news-content ul {
   list-style-type: none;
   padding-left: 0;
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
 }
 
-.year-content li {
+.news-content li {
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
-.year-content li:last-child {
+.news-content li:last-child {
   margin-bottom: 0;
 }
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
-  .year-header {
-    background-color: #2a2a2a;
-  }
-  
-  .year-header:hover {
-    background-color: #333;
-  }
-  
-  .year-header h3 {
-    color: #e0e0e0;
+  .news-header:hover .toggle-icon {
+    color: rgb(62, 183, 240);
   }
   
   .toggle-icon {
