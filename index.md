@@ -4,17 +4,16 @@ layout: homepage
 
 ## About Me
 
-Hi 👋🏼 I completed my B.S. in Computer Science with a Minor in Statistics at UC Santa Cruz, Baskin Engineering. I am very fortunate to be advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) at the [AEIA Lab](https://aiea-lab.github.io/), where I studied LLM trustworthiness, and failure modes. I was also advised by [Prof. Xin (Eric) Wang](https://eric-xw.github.io/) at the [ERIC Lab](http://eric-lab.soe.ucsc.edu/people), where I worked on reasoning-model safety evaluation, and identifying unsafe internal reasoning patterns. I am currently a research intern at the National Renewable Energy Laboratory, where I work on physics-informed machine learning, system identification (SINDy, SINDy-PI), symbolic regression, and discrepancy modeling for nonlinear dynamical systems. Beyond the lab, I'm exploring how embodied systems can reason about the world, model interpretable dynamics, and act safely under uncertainty. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
+Hi 👋🏼 I completed my B.S. in Computer Science with a Minor in Statistics at UC Santa Cruz, Baskin Engineering. I am very fortunate to be advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) at the [AEIA Lab](https://aiea-lab.github.io/), where my work focused on LLM trustworthiness and failure modes, and by [Prof. Xin (Eric) Wang](https://eric-xw.github.io/) at the [ERIC Lab](http://eric-lab.soe.ucsc.edu/people), where I studied reasoning LLMs and VLA safety evaluation. I am currently at the National Renewable Energy Laboratory working on physics-informed ML, sparse system identification, and discrepancy modeling for nonlinear dynamical systems.
 
-<p><strong style="color:#1769AA;">I’m currently applying to EECS and Robotics PhD programs for Fall 2026.</strong></p>
+Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
+
+<p><strong style="color:#1769AA;">I’m currently applying to EECS and Robotics MS/PhD programs for Fall 2026.</strong></p>
 
 
 ## Research Interests
 
-- **Safe & Interpretable Robotics:** Transparent world models, memory-based manipulation, and interpretable visuomotor control.
-- **LLM & Reasoning Safety:** Understanding hidden reasoning failures and evaluating generative models under adversarial prompting.
-- **Reinforcement Learning:** Developing and understanding RL algorithms. Learning applications for interpretability methods with Decision Transformers.
-- **Physics-Informed ML:** SINDy/SINDy-PI, symbolic regression, and residual dynamics modeling for control.
+I’m excited by how embodied systems can reason about the world, learn interpretable dynamics, and act safely under uncertainty. Broadly, my interests are in interpretable autonomy, grounded world models, and VLA-based reasoning monitors that help robots maintain reliable internal beliefs and execute robust manipulation behaviors.
 
 {% include_relative _includes/publications.md %}
 
