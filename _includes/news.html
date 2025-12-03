@@ -36,31 +36,61 @@
 </div>
 
 <script>
+// Smooth expand/collapse without jank
 function togglePastNews() {
   var content = document.getElementById('past-news');
   var icon = document.querySelector('.news-toggle .toggle-icon');
   if (!content || !icon) return;
-  if (content.classList.contains('active')) {
+
+  var isOpen = content.classList.contains('active');
+
+  if (isOpen) {
+    // Collapse: set explicit height to current scrollHeight, then to 0
+    content.style.height = content.scrollHeight + 'px';
+    // Force reflow so the height assignment above is recognized
+    content.offsetHeight; 
+    content.style.height = '0px';
     content.classList.remove('active');
     icon.textContent = '▶';
   } else {
+    // Expand: from 0 to scrollHeight
     content.classList.add('active');
+    content.style.height = '0px';
+    // Next frame, set to full height
+    requestAnimationFrame(function() {
+      content.style.height = content.scrollHeight + 'px';
+    });
     icon.textContent = '▼';
   }
+
+  // After transition ends, remove explicit height to allow responsive content
+  content.addEventListener('transitionend', function handler(e) {
+    if (e.propertyName === 'height') {
+      content.style.height = isOpen ? '0px' : 'auto';
+      content.removeEventListener('transitionend', handler);
+    }
+  });
 }
 </script>
 
 <style>
-/* Inline styles to ensure toggle works without a full CSS rebuild */
+/* Inline styles to ensure toggle works and stays smooth */
 .news-toggle { cursor: pointer; padding: 5px 0; user-select: none; display: flex; align-items: center; gap: 8px; margin: 15px 0; }
 .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: #043361; }
-.toggle-icon { font-size: 0.9em; color: #666; transition: color 0.3s ease; }
-.toggle-text { font-size: 0.95em; color: #666; transition: color 0.3s ease; }
-.past-news-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
-.past-news-content.active { max-height: 2000px; }
+.toggle-icon { font-size: 0.9em; color: #666; transition: color 0.2s ease; }
+.toggle-text { font-size: 0.95em; color: #666; transition: color 0.2s ease; }
+
+/* Use height for animation; avoid max-height jank */
+.past-news-content { height: 0; overflow: hidden; transition: height 220ms ease; will-change: height; }
+.past-news-content.active { /* no static styles; height managed via JS */ height: auto; }
+
 h2 + h3, .past-news-content h3 { margin-top: 20px; margin-bottom: 10px; }
 #news ul { list-style-type: none; padding-left: 0; margin: 10px 0 20px 0; }
 #news li { margin-bottom: 10px; line-height: 1.6; }
 #news li:last-child { margin-bottom: 0; }
-@media (prefers-color-scheme: dark) { .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: rgb(62, 183, 240); } .toggle-icon, .toggle-text { color: #aaa; } }
+
+@media (prefers-color-scheme: dark) {
+  .news-toggle:hover .toggle-icon, .news-toggle:hover .toggle-text { color: rgb(62, 183, 240); }
+  .toggle-icon, .toggle-text { color: #aaa; }
+}
 </style>
