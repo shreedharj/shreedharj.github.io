@@ -4,6 +4,7 @@
       content: "I submitted a paper introducing SafePro, a benchmark for evaluating the safety failures in long-horizon AI agents"
       link: "https://safeprobench.github.io/safepro/"
       link_text: "Link"
+      
 - year: 2025
   items:
     - date: "December"
