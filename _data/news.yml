@@ -1,24 +1,32 @@
+- year: 2026
+  items:
+    - date: "January"
+      content: "I submitted a paper introducing SafePro, a benchmark for evaluating the safety failures in long-horizon AI agents"
+      link: "https://safeprobench.github.io/safepro/"
+      link_text: "Link"
 - year: 2025
   items:
+    - date: "December"
+      content: "I completed my internship at NREl (now NRL) and presented my work on PIML: system identification and data-driven control."
     - date: "June"
       content: "I began my internship at National Renewable Energy Laboratory in Golden, Colorado."
-    - date: "Feburary"
-      content: "I submitted a paper on reasoning model (R1 and o3mini) safety"
+    - date: "February"
+      content: "I submitted a paper on reasoning model (R1 and o3mini) safety."
       link: "https://r1-safety.github.io/"
       link_text: "Link"
     - date: "January"
-      content: "I was awarded an honorable mention for the CRA Outstanding Undergraduate Researcher Award"
+      content: "I was awarded an honorable mention for the CRA Outstanding Undergraduate Researcher Award."
       link: "https://cra.org/about/awards/outstanding-undergraduate-researcher-award/"
       link_text: "Link"
 
 - year: 2024
   items:
     - date: "August"
-      content: "I finished my research internship at ERAU and presented our research"
+      content: "I finished my research internship at ERAU and presented our research on swarm communication and formation control."
       link: "https://youtu.be/SqhE1SGtxtw?si=0thE9U4iBOH8Q5pY"
       link_text: "Link"
     - date: "May"
-      content: "Our paper got the UCSC Deans' Undergraduate Research Award"
+      content: "Our paper got the UCSC Deans' Undergraduate Research Award."
       link: "https://engineering.ucsc.edu/news/the-2024-deans-awards-highlight-outstanding-baskin-engineering-undergraduate-research/"
       link_text: "Link"
     - date: "April"
@@ -27,4 +35,4 @@
 - year: 2023
   items:
     - date: "October"
-      content: "I submitted my first paper!"
+      content: "I submitted my first paper on transfer learning!"
