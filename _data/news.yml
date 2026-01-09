@@ -4,11 +4,11 @@
       content: "I submitted a paper introducing SafePro, a benchmark for evaluating the safety failures in long-horizon AI agents"
       link: "https://safeprobench.github.io/safepro/"
       link_text: "Link"
-      
+
 - year: 2025
   items:
     - date: "December"
-      content: "I completed my internship at NREl (now NRL) and presented my work on PIML: system identification and data-driven control."
+      content: "I completed my internship at NREl (now NLR) and presented my work on PIML: system identification and data-driven control."
     - date: "June"
       content: "I began my internship at National Renewable Energy Laboratory in Golden, Colorado."
     - date: "February"
