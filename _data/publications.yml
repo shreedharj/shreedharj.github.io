@@ -2,7 +2,7 @@ main:
 
   - title: "SafePro: Evaluating the Safety of Professional-Level AI Agents"
     authors: Kaiwen Zhou, Shreedhar Jangam, Ashwin Nagarajan, Tejas Polu, Suhas Oruganti, Chengzhi Liu, Ching-Chen Kuo, Yuting Zheng, Sravana Narayanaraju, Xin Eric Wang
-    conference_short: arXiv
+    conference_short: ACL
     conference: arXiv preprint 2601.06663, 2026
     pdf: https://arxiv.org/pdf/2601.06663
     image: ./assets/img/safePro.png
