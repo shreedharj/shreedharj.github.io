@@ -1,5 +1,13 @@
 main:
 
+  - title: "SafePro: Evaluating the Safety of Professional-Level AI Agents"
+    authors: Kaiwen Zhou, Shreedhar Jangam, Ashwin Nagarajan, Tejas Polu, Suhas Oruganti, Chengzhi Liu, Ching-Chen Kuo, Yuting Zheng, Sravana Narayanaraju, Xin Eric Wang
+    conference_short: arXiv
+    conference: arXiv preprint 2601.06663, 2026
+    pdf: https://arxiv.org/pdf/2601.06663
+    image: ./assets/img/safePro.png
+    notes: In-Review 
+    bibtex: https://arxiv.org/abs/2601.06663
   - title: "The Hidden Risks of Large Reasoning Models: A Safety Assessment of R1"
     authors: Kaiwen Zhou, Chengzhi Liu, Xuandong Zhao, Shreedhar Jangam, Jayanth Srinivasa, Gaowen Liu, Dawn Song, Xin Eric Wang
     conference_short: IJCNLP-AACL 2025
