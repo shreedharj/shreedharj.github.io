@@ -207,6 +207,8 @@ screen and (min-width: 480px) {
   box-shadow: 3px 3px 6px #888;
   object-fit: contain;
   background: #fff;
+  margin-top: 5px; 
+  margin-left: 5px; 
 }
 
 /* BibTeX Button Styling */
@@ -273,7 +275,7 @@ screen and (min-width: 480px) {
     color: var(--global-theme-color);
     border-color: var(--global-theme-color);
 }
-
+/* 
 @media screen and (max-width: 768px) {
 
   .publications ol.bibliography li .pub-row {
@@ -298,4 +300,4 @@ screen and (min-width: 480px) {
   .publications ol.bibliography li .col-sm-9 {
     width: 100%;
   }
-}
+} */

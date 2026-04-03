@@ -225,6 +225,8 @@ screen and (min-width: 480px) {
   box-shadow: 3px 3px 6px #888;
   object-fit: contain;
   background: #fff;
+  margin-top: 5px; 
+  margin-left: 5px; 
 }
 
 /* BibTeX Button Styling */
@@ -312,18 +314,28 @@ screen and (min-width: 480px) {
     border-color: var(--global-theme-color);
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
+
   .publications ol.bibliography li .pub-row {
     flex-direction: column;
+    gap: 10px;
   }
 
-  .publications ol.bibliography li .abbr,
+  .publications ol.bibliography li .abbr {
+    width: 100%;
+    flex: none;
+    display: flex;
+    justify-content: center;
+  }
+
   .publications ol.bibliography li .teaser {
     width: 100%;
-    max-width: 270px;
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
   }
 
-  .publications ol.bibliography li .pub-row .col-sm-9 {
+  .publications ol.bibliography li .col-sm-9 {
     width: 100%;
   }
-}
+} */
