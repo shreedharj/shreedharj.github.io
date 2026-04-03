@@ -94,7 +94,6 @@ screen and (min-width: 480px) {
 .publications ol.bibliography li .pub-row {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
 }
 
 .publications ol.bibliography li .pub-row .col-sm-9 {
@@ -103,8 +102,8 @@ screen and (min-width: 480px) {
 }
 
 .publications ol.bibliography li .abbr {
-    width: 220px;
-    flex: 0 0 220px;
+    width: 200px;
+    flex: 0 0 200px;
     height: auto;
     margin-bottom: 0.5rem;
     box-sizing: border-box;
@@ -219,12 +218,11 @@ screen and (min-width: 480px) {
 
 .publications ol.bibliography li .teaser {
   width: 100%;
-  max-width: 220px;
+  max-width: 200px;
   height: auto;
   max-height: 123px;
   border-radius: 8px;
   box-shadow: 3px 3px 6px #888;
-  margin: 5px;
   object-fit: contain;
   background: #fff;
 }
