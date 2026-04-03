@@ -16,8 +16,21 @@ document.addEventListener('DOMContentLoaded', function() {
   // Copy to clipboard functionality
   const copyButtons = document.querySelectorAll('.btn-copy-bibtex');
   copyButtons.forEach(function(button) {
+    let currentTimeout = null;
+    
     button.addEventListener('click', function(e) {
       e.preventDefault();
+      
+      // Clear previous timeout if exists
+      if (currentTimeout) {
+        clearTimeout(currentTimeout);
+      }
+      
+      // Remove any existing "Copied!" text
+      const existingText = button.querySelector('.copied-feedback');
+      if (existingText) {
+        existingText.remove();
+      }
       
       // Get the BibTeX text from the pre element
       const preElement = button.closest('.bibtex-content').querySelector('pre');
@@ -28,14 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
         // Visual feedback: show text above icon
         const textSpan = document.createElement('span');
         textSpan.textContent = 'Copied!';
+        textSpan.className = 'copied-feedback';
         textSpan.style.fontSize = '10px';
         textSpan.style.marginBottom = '2px';
         textSpan.style.whiteSpace = 'nowrap';
+        textSpan.style.display = 'block';
         button.insertBefore(textSpan, button.firstChild);
         
         // Reset after 1 second
-        setTimeout(function() {
+        currentTimeout = setTimeout(function() {
           textSpan.remove();
+          currentTimeout = null;
         }, 1000);
       }).catch(function(err) {
         console.error('Failed to copy BibTeX:', err);
