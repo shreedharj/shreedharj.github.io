@@ -38,14 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Copy to clipboard
       navigator.clipboard.writeText(bibtexText).then(function() {
-        // Visual feedback: show text above icon
+        // Visual feedback: show text to the left of icon
         const textSpan = document.createElement('span');
         textSpan.textContent = 'Copied!';
         textSpan.className = 'copied-feedback';
         textSpan.style.fontSize = '10px';
-        textSpan.style.marginBottom = '2px';
+        textSpan.style.marginRight = '4px';
         textSpan.style.whiteSpace = 'nowrap';
-        textSpan.style.display = 'block';
+        textSpan.style.display = 'inline';
         button.insertBefore(textSpan, button.firstChild);
         
         // Reset after 1 second
