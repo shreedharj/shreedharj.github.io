@@ -88,7 +88,7 @@ screen and (min-width: 480px) {
 .publications ol.bibliography li .pub-row {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 4px;
 }
 
 .publications ol.bibliography li .pub-row .col-sm-9 {
