@@ -103,9 +103,9 @@ screen and (min-width: 480px) {
 }
 
 .publications ol.bibliography li .abbr {
-    width: 270px;
-    flex: 0 0 270px;
-    height: 8rem;
+    width: 220px;
+    flex: 0 0 220px;
+    height: auto;
     margin-bottom: 0.5rem;
     box-sizing: border-box;
 }
@@ -218,12 +218,15 @@ screen and (min-width: 480px) {
 }
 
 .publications ol.bibliography li .teaser {
-  width: 270px;
-  height: 123px;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  max-height: 123px;
   border-radius: 8px;
   box-shadow: 3px 3px 6px #888;
   margin: 5px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #fff;
 }
 
 /* BibTeX Button Styling */
