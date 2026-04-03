@@ -97,13 +97,11 @@ screen and (min-width: 480px) {
 }
 
 .publications ol.bibliography li .abbr {
-  width: 200px;
-  flex: 0 0 200px;
+  width: 210px;
+  flex: 0 0 210px;
   height: auto;
   margin-bottom: 0.5rem;
   box-sizing: border-box;
-  display: flex;
-  align-items: flex-start;
 }
 
 .publications ol.bibliography li .abbr abbr {
@@ -204,7 +202,7 @@ screen and (min-width: 480px) {
 .publications ol.bibliography li .teaser {
   display: block;
   width: 100%;
-  max-width: 200px;
+  max-width: 210px;
   height: auto;
   max-height: 123px;
   border-radius: 8px;
