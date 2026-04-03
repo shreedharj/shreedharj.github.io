@@ -73,3 +73,22 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+
+/* BibTeX Button Styling */
+.publications ol.bibliography li .links button.bibtex-toggle { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: transparent; cursor: pointer; font-size: 12px; }
+
+.publications ol.bibliography li .links button.bibtex-toggle:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+
+/* BibTeX Container and Content Styling */
+.publications ol.bibliography li .bibtex-container { margin-top: 1rem; }
+
+.publications ol.bibliography li .bibtex-content { font-size: 0.875rem; max-height: 0px; overflow: hidden; -webkit-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -ms-transition: all 0.15s ease; -o-transition: all 0.15s ease; transition: all 0.15s ease; }
+
+.publications ol.bibliography li .bibtex-content.open { max-height: 100em; -webkit-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -ms-transition: all 0.15s ease; -o-transition: all 0.15s ease; transition: all 0.15s ease; }
+
+.publications ol.bibliography li .bibtex-content pre { margin: 0 !important; background-color: var(--global-code-bg-color); padding: 10px; border-radius: 4px; font-size: 11px; overflow-x: auto; border: 1px solid #e0e0e0; }
+
+/* Copy BibTeX Button */
+.publications ol.bibliography li .bibtex-content button.btn-copy-bibtex { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: transparent; cursor: pointer; font-size: 12px; margin-top: 8px; }
+
+.publications ol.bibliography li .bibtex-content button.btn-copy-bibtex:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }

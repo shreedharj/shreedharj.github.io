@@ -6,8 +6,15 @@ main:
     conference: arXiv preprint 2601.06663, 2026
     pdf: https://arxiv.org/pdf/2601.06663
     image: ./assets/img/safePro.png
-    notes: In-Review 
-    bibtex: https://arxiv.org/abs/2601.06663
+    notes: Accepted
+    arxiv_url: https://arxiv.org/abs/2601.06663
+    bibtex_entry: |
+      @article{Zhou2026SafePro,
+        title={SafePro: Evaluating the Safety of Professional-Level AI Agents},
+        author={Zhou, Kaiwen and Jangam, Shreedhar and Nagarajan, Ashwin and Polu, Tejas and Oruganti, Suhas and Liu, Chengzhi and Kuo, Ching-Chen and Zheng, Yuting and Narayanaraju, Sravana and Wang, Xin Eric},
+        journal={arXiv preprint arXiv:2601.06663},
+        year={2026}
+      }
   - title: "The Hidden Risks of Large Reasoning Models: A Safety Assessment of R1"
     authors: Kaiwen Zhou, Chengzhi Liu, Xuandong Zhao, Shreedhar Jangam, Jayanth Srinivasa, Gaowen Liu, Dawn Song, Xin Eric Wang
     conference_short: IJCNLP-AACL 2025
@@ -15,7 +22,14 @@ main:
     pdf: https://arxiv.org/pdf/2502.12659
     image: ./assets/img/r1Eval2.png
     notes: Accepted 
-    bibtex: https://arxiv.org/abs/2502.12659
+    arxiv_url: https://arxiv.org/abs/2502.12659
+    bibtex_entry: |
+      @article{Zhou2025HiddenRisks,
+        title={The Hidden Risks of Large Reasoning Models: A Safety Assessment of R1},
+        author={Zhou, Kaiwen and Liu, Chengzhi and Zhao, Xuandong and Jangam, Shreedhar and Srinivasa, Jayanth and Liu, Gaowen and Song, Dawn and Wang, Xin Eric},
+        journal={arXiv preprint arXiv:2502.12659},
+        year={2025}
+      }
   - title: Can Large Language Models Explain Themselves? A Study of LLM-Generated Self-Explanations
     authors: Shiyuan Huang, Siddarth Mamidanna, Shreedhar Jangam, Yilun Zhou, Leilani H. Gilpin
     conference_short: arXiv
@@ -23,14 +37,12 @@ main:
     pdf: https://arxiv.org/pdf/2310.11207.pdf
     image: ./assets/img/llmExplainPaper.png
     notes: Preprint
-    bibtex: https://arxiv.org/abs/2310.11207
-    # bibtex: |
-    #   @misc{huang2023large,
-    #   title={Can Large Language Models Explain Themselves? A Study of LLM-Generated Self-Explanations}, 
-    #   author={Shiyuan Huang and Siddarth Mamidanna and Shreedhar Jangam and Yilun Zhou and Leilani H. Gilpin},
-    #   year={2023},
-    #   eprint={2310.11207},
-    #   archivePrefix={arXiv},
-    #   primaryClass={cs.CL}
-    #   }
+    arxiv_url: https://arxiv.org/abs/2310.11207
+    bibtex_entry: |
+      @article{Huang2023LLMExplain,
+        title={Can Large Language Models Explain Themselves? A Study of LLM-Generated Self-Explanations},
+        author={Huang, Shiyuan and Mamidanna, Siddarth and Jangam, Shreedhar and Zhou, Yilun and Gilpin, Leilani H.},
+        journal={arXiv preprint arXiv:2310.11207},
+        year={2023}
+      }
 

@@ -16,7 +16,7 @@
     {% endif %}
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
+      <div class="title"><a href="{{ link.arxiv_url }}">{{ link.title }}</a></div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em>
       </div>
@@ -30,8 +30,8 @@
       {% if link.page %} 
       <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
       {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      {% if link.bibtex_entry %} 
+      <button class="btn btn-sm z-depth-0 bibtex-toggle" role="button" style="font-size:12px;">BibTex</button>
       {% endif %}
       {% if link.notes %} 
       <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
@@ -40,6 +40,14 @@
       {{ link.others }}
       {% endif %}
     </div>
+    {% if link.bibtex_entry %}
+    <div class="bibtex-container">
+      <div class="bibtex-content hidden" data-bibtex="{{ link.bibtex_entry | escape }}">
+        <pre style="margin: 0; background: #f5f5f5; padding: 10px; border-radius: 4px; font-size: 11px; overflow-x: auto;">{{ link.bibtex_entry }}</pre>
+        <button class="btn btn-sm z-depth-0 btn-copy-bibtex" role="button" style="font-size:12px; margin-top: 8px;">Copy BibTex</button>
+      </div>
+    </div>
+    {% endif %}
   </div>
 </div>
 </li>
