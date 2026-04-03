@@ -44,7 +44,7 @@
     <div class="bibtex-container">
       <div class="bibtex-content hidden" data-bibtex="{{ link.bibtex_entry | escape }}">
         <pre style="margin: 0; background: #f5f5f5; padding: 10px; border-radius: 4px; font-size: 11px; overflow-x: auto;">{{ link.bibtex_entry }}</pre>
-        <button class="btn-copy-bibtex" role="button" title="Copy BibTeX" aria-label="Copy BibTeX">📋</button>
+        <button class="btn-copy-bibtex" role="button" title="Copy BibTeX" aria-label="Copy BibTeX"><i class="fas fa-clipboard"></i></button>
       </div>
     </div>
     {% endif %}

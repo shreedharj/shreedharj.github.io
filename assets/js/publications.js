@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Copy to clipboard
       navigator.clipboard.writeText(bibtexText).then(function() {
-        // Visual feedback: change button text temporarily
-        const originalText = button.textContent;
-        button.textContent = 'Copied!';
+        // Visual feedback: show small "Copied!" message
+        const originalHTML = button.innerHTML;
+        button.innerHTML = '<span style="font-size: 8px; font-weight: normal;">Copied!</span>';
         
         // Reset after 2 seconds
         setTimeout(function() {
-          button.textContent = originalText;
-        }, 2000);
+          button.innerHTML = originalHTML;
+        }, 1000);
       }).catch(function(err) {
         console.error('Failed to copy BibTeX:', err);
       });
