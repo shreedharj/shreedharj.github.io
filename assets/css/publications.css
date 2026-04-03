@@ -102,11 +102,13 @@ screen and (min-width: 480px) {
   min-width: 0;
 }
 
+/* Image Box Styling */
 .publications ol.bibliography li .abbr {
-  width: 210px;
-  flex: 0 0 210px;
+  width: 220px;
+  flex: 0 0 220px;
   height: auto;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -217,17 +219,19 @@ screen and (min-width: 480px) {
     border-color: var(--global-text-color);
 }
 
+/* Actual Image Styling */
 .publications ol.bibliography li .teaser {
   display: block;
   width: 100%;
-  max-width: 210px;
+  max-width: 220px;
   height: auto;
   max-height: 123px;
   border-radius: 8px;
   box-shadow: 3px 3px 6px #888;
   object-fit: contain;
   background: #fff;
-  margin: 0; 
+  margin: 0;
+  vertical-align: top;
 }
 
 /* BibTeX Button Styling */
