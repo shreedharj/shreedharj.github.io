@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Visual feedback: change button text temporarily
         const originalText = button.textContent;
         button.textContent = 'Copied!';
-        button.style.backgroundColor = '#28a745';
+        button.style.backgroundColor = '#0e6322';
         button.style.color = 'white';
         
         // Reset after 2 seconds
