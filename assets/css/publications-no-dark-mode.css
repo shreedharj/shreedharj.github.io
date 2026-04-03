@@ -38,7 +38,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li { min-height: 110px; margin-bottom: 0.5rem; }
 
-.publications ol.bibliography li .pub-row { display: flex; gap: 15px; align-items: flex-start; }
+.publications ol.bibliography li .pub-row { display: flex; align-items: flex-start; }
 
 .publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; flex-grow: 0; flex-shrink: 0; align-self: flex-start; }
 
