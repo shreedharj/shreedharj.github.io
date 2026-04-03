@@ -268,6 +268,7 @@ screen and (min-width: 480px) {
 }
 
 .publications ol.bibliography li .bibtex-content {
+  position: relative;
   max-width: 100%;
   max-height: 0;
   overflow: hidden;
@@ -292,30 +293,39 @@ screen and (min-width: 480px) {
     }
 }
 
-/* Copy BibTeX Button */
+/* Copy BibTeX Icon Button */
 .publications ol.bibliography li .bibtex-content button.btn-copy-bibtex {
-    color: #000000;
-    border: 1px solid #000000;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    background-color: transparent;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: none;
+    border: none;
     cursor: pointer;
-    font-size: 12px;
-    font-family: initial;
-    line-height: normal;
-    margin-top: 8px;
-}
-
-@media (prefers-color-scheme: dark) {
-    .publications ol.bibliography li .bibtex-content button.btn-copy-bibtex {
-        color: #FFFFFF;
-        border: 1px solid #FFFFFF;
-    }
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.6;
 }
 
 .publications ol.bibliography li .bibtex-content button.btn-copy-bibtex:hover {
-    color: var(--global-theme-color);
-    border-color: var(--global-theme-color);
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.publications ol.bibliography li .bibtex-content button.btn-copy-bibtex:active {
+    transform: scale(0.95);
+}
+
+.publications ol.bibliography li .bibtex-content button.btn-copy-bibtex:focus {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .publications ol.bibliography li .bibtex-content button.btn-copy-bibtex:focus {
+        outline-color: #FFFFFF;
+    }
 }

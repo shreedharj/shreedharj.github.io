@@ -28,14 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Visual feedback: change button text temporarily
         const originalText = button.textContent;
         button.textContent = 'Copied!';
-        button.style.backgroundColor = '#0e6322';
-        button.style.color = 'white';
         
         // Reset after 2 seconds
         setTimeout(function() {
           button.textContent = originalText;
-          button.style.backgroundColor = '';
-          button.style.color = '';
         }, 2000);
       }).catch(function(err) {
         console.error('Failed to copy BibTeX:', err);
