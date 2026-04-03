@@ -25,14 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Copy to clipboard
       navigator.clipboard.writeText(bibtexText).then(function() {
-        // Visual feedback: show small "Copied!" message
-        const originalHTML = button.innerHTML;
-        button.innerHTML = '<span style="font-size: 8px; font-weight: normal;">Copied!</span>';
+        // Visual feedback: show text above icon
+        const textSpan = document.createElement('span');
+        textSpan.textContent = 'Copied!';
+        textSpan.style.display = 'block';
+        textSpan.style.fontSize = '10px';
+        textSpan.style.marginBottom = '2px';
+        textSpan.className = 'copied-text';
+        button.insertBefore(textSpan, button.firstChild);
         
-        // Reset after 2 seconds
+        // Reset after 1.5 seconds
         setTimeout(function() {
-          button.innerHTML = originalHTML;
-        }, 1000);
+          textSpan.remove();
+        }, 1500);
       }).catch(function(err) {
         console.error('Failed to copy BibTeX:', err);
       });

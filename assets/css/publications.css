@@ -305,7 +305,7 @@ screen and (min-width: 480px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 8px;
+    font-size: 14px;
     transition: transform 0.2s ease, opacity 0.2s ease;
     opacity: 0.6;
 }
