@@ -40,7 +40,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .pub-row { display: flex; align-items: flex-start; }
 
-.publications ol.bibliography li .abbr { width: 120px; height: 8rem; margin-bottom: 0.5rem; flex-grow: 0; flex-shrink: 0; align-self: flex-start; }
+.publications ol.bibliography li .pub-row .col-sm-9 { width: auto; flex: 1; }
+
+.publications ol.bibliography li .abbr { width: 120px; height: 8rem; margin-bottom: 0.5rem; flex-grow: 0; flex-shrink: 0; align-self: flex-start; box-sizing: border-box; }
 
 .publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; position: absolute; top: 8px; left: 16px; }
 
