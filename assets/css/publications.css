@@ -94,6 +94,7 @@ screen and (min-width: 480px) {
 .publications ol.bibliography li .pub-row {
     display: flex;
     align-items: flex-start;
+    gap: 12px;
 }
 
 .publications ol.bibliography li .pub-row .col-sm-9 {
@@ -102,11 +103,13 @@ screen and (min-width: 480px) {
 }
 
 .publications ol.bibliography li .abbr {
-    width: 200px;
-    flex: 0 0 200px;
-    height: auto;
-    margin-bottom: 0.5rem;
-    box-sizing: border-box;
+  width: 200px;
+  flex: 0 0 200px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
 }
 
 .publications ol.bibliography li .abbr abbr {
@@ -225,8 +228,7 @@ screen and (min-width: 480px) {
   box-shadow: 3px 3px 6px #888;
   object-fit: contain;
   background: #fff;
-  margin-top: 5px; 
-  margin-left: 5px; 
+  margin: 0; 
 }
 
 /* BibTeX Button Styling */
@@ -269,14 +271,14 @@ screen and (min-width: 480px) {
 }
 
 .publications ol.bibliography li .bibtex-content.open {
-  max-height: 100em;
+  max-height: 100%;
 }
 
 .publications ol.bibliography li .bibtex-content pre {
   max-width: 100%;
   overflow-x: auto;
-  white-space: pre-wrap;
-  word-break: break-word;
+  white-space: pre;
+  word-break: normal;
   box-sizing: border-box;
 }
 
@@ -313,29 +315,3 @@ screen and (min-width: 480px) {
     color: var(--global-theme-color);
     border-color: var(--global-theme-color);
 }
-
-/* @media screen and (max-width: 768px) {
-
-  .publications ol.bibliography li .pub-row {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .publications ol.bibliography li .abbr {
-    width: 100%;
-    flex: none;
-    display: flex;
-    justify-content: center;
-  }
-
-  .publications ol.bibliography li .teaser {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .publications ol.bibliography li .col-sm-9 {
-    width: 100%;
-  }
-} */
