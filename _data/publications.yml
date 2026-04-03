@@ -3,7 +3,7 @@ main:
   - title: "SafePro: Evaluating the Safety of Professional-Level AI Agents"
     authors: Kaiwen Zhou, Shreedhar Jangam, Ashwin Nagarajan, Tejas Polu, Suhas Oruganti, Chengzhi Liu, Ching-Chen Kuo, Yuting Zheng, Sravana Narayanaraju, Xin Eric Wang
     conference_short: ICLR 2026
-    conference: arXiv preprint 2601.06663, 2026
+    # conference: arXiv preprint 2601.06663, 2026
     pdf: https://arxiv.org/pdf/2601.06663
     image: ./assets/img/safePro.png
     notes: Accepted
@@ -18,7 +18,7 @@ main:
   - title: "The Hidden Risks of Large Reasoning Models: A Safety Assessment of R1"
     authors: Kaiwen Zhou, Chengzhi Liu, Xuandong Zhao, Shreedhar Jangam, Jayanth Srinivasa, Gaowen Liu, Dawn Song, Xin Eric Wang
     conference_short: IJCNLP-AACL 2025
-    conference: arXiv preprint 2502.12659, 2025
+    # conference: arXiv preprint 2502.12659, 2025
     pdf: https://arxiv.org/pdf/2502.12659
     image: ./assets/img/r1Eval2.png
     notes: Accepted 
@@ -33,7 +33,7 @@ main:
   - title: Can Large Language Models Explain Themselves? A Study of LLM-Generated Self-Explanations
     authors: Shiyuan Huang, Siddarth Mamidanna, Shreedhar Jangam, Yilun Zhou, Leilani H. Gilpin
     conference_short: arXiv
-    conference: arXiv preprint 2310.11207, 2023
+    # conference: arXiv preprint 2310.11207, 2023
     pdf: https://arxiv.org/pdf/2310.11207.pdf
     image: ./assets/img/llmExplainPaper.png
     notes: Preprint
