@@ -74,15 +74,8 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
 
-/* Flexbox layout to prevent left column from stretching */
-.publications ol.bibliography li .pub-row { display: flex; align-items: flex-start; gap: 0; }
-
-.publications ol.bibliography li .col-sm-3 { flex: 0 0 auto; width: 25%; }
-
-.publications ol.bibliography li .col-sm-9 { flex: 1 1 auto; }
-
 /* BibTeX Button Styling */
-.publications ol.bibliography li .links button.bibtex-toggle { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: transparent; cursor: pointer; font-size: 12px; font-family: inherit; }
+.publications ol.bibliography li .links button.bibtex-toggle { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: transparent; cursor: pointer; font-size: 12px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
 
 .publications ol.bibliography li .links button.bibtex-toggle:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
 
@@ -96,6 +89,6 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li .bibtex-content pre { margin: 0 !important; background-color: var(--global-code-bg-color); padding: 10px; border-radius: 4px; font-size: 11px; overflow-x: auto; border: 1px solid #e0e0e0; }
 
 /* Copy BibTeX Button */
-.publications ol.bibliography li .bibtex-content button.btn-copy-bibtex { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: transparent; cursor: pointer; font-size: 12px; margin-top: 8px; font-family: inherit; }
+.publications ol.bibliography li .bibtex-content button.btn-copy-bibtex { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; background-color: transparent; cursor: pointer; font-size: 12px; margin-top: 8px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
 
 .publications ol.bibliography li .bibtex-content button.btn-copy-bibtex:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
