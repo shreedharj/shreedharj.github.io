@@ -28,16 +28,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Visual feedback: show text above icon
         const textSpan = document.createElement('span');
         textSpan.textContent = 'Copied!';
-        textSpan.style.display = 'block';
         textSpan.style.fontSize = '10px';
         textSpan.style.marginBottom = '2px';
-        textSpan.className = 'copied-text';
+        textSpan.style.whiteSpace = 'nowrap';
         button.insertBefore(textSpan, button.firstChild);
         
-        // Reset after 1.5 seconds
+        // Reset after 1 second
         setTimeout(function() {
           textSpan.remove();
-        }, 1500);
+        }, 1000);
       }).catch(function(err) {
         console.error('Failed to copy BibTeX:', err);
       });
