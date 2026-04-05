@@ -37,7 +37,8 @@
 }
 
 h2 + h3,
-.past-news-content h3 {
+.past-news-content h3,
+.news-block h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -58,7 +59,8 @@ h2 + h3,
 }
 .pub-row {
   display: flex; 
-  align-items: center;}
+  align-items: flex-start;
+}
 
 .social-icons a{
   display:inline-block;
@@ -441,7 +443,7 @@ footer {
 
   .pub-row {
   display: flex; 
-  align-items: center;}
+  align-items: flex-start;}
 
   div.wrapper {
     width:auto;
@@ -500,7 +502,7 @@ footer {
 
   .pub-row {
   display: flex; 
-  align-items: center;}
+  align-items: flex-start;}
 
   header {
     padding:0;
