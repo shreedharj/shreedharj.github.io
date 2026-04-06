@@ -23,18 +23,12 @@
     --global-code-bg-color: rgba(181, 9, 172, 0.05);
     --global-text-color: #000000;
     --global-text-color-light: #828282;
-    --global-theme-color: #002D72;
+    --global-theme-color: #043361;
     --global-hover-color: #ffb81c;
     --global-footer-bg-color: #1c1c1c;
     --global-footer-text-color: #e8e8e8;
     --global-footer-link-color: #ffffff;
     --global-distill-app-color: #828282;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --global-theme-color: rgb(36, 150, 203);
-    }
 }
 
 blockquote {
@@ -165,18 +159,6 @@ screen and (min-width: 480px) {
     padding-bottom: 0.1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-    .publications ol.bibliography li .links a.btn {
-        color: #FFFFFF;
-        border: 1px solid #FFFFFF;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-top: 0.1rem;
-        padding-bottom: 0.1rem;
-    }
-
-}
-
 .publications ol.bibliography li .links a.btn:hover {
     color: var(--global-theme-color);
     border-color: var(--global-theme-color);
@@ -251,13 +233,6 @@ screen and (min-width: 480px) {
     line-height: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-    .publications ol.bibliography li .links button.bibtex-toggle {
-        color: #FFFFFF;
-        border: 1px solid #FFFFFF;
-    }
-}
-
 .publications ol.bibliography li .links button.bibtex-toggle:hover {
     color: var(--global-theme-color);
     border-color: var(--global-theme-color);
@@ -286,12 +261,10 @@ screen and (min-width: 480px) {
   white-space: pre;
   word-break: normal;
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-    .publications ol.bibliography li .bibtex-content pre {
-        border-color: #444;
-    }
+  background: #f5f5f5;
+  color: #333333;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
 }
 
 /* Copy BibTeX Icon Button */
@@ -332,8 +305,34 @@ screen and (min-width: 480px) {
     outline: none;
 }
 
-@media (prefers-color-scheme: dark) {
-    .publications ol.bibliography li .bibtex-content button.btn-copy-bibtex:focus {
-        outline-color: #FFFFFF;
-    }
+/* =====================================================
+   Publications dark mode (data-theme="dark")
+   ===================================================== */
+html[data-theme="dark"] .publications ol.bibliography li .links a.btn {
+    color: #E6E6E6;
+    border: 1px solid #555;
+}
+html[data-theme="dark"] .publications ol.bibliography li .links a.btn:hover {
+    color: #6BB6E3;
+    border-color: #6BB6E3;
+}
+html[data-theme="dark"] .publications ol.bibliography li .links button.bibtex-toggle {
+    color: #E6E6E6;
+    border: 1px solid #555;
+    background-color: transparent;
+}
+html[data-theme="dark"] .publications ol.bibliography li .links button.bibtex-toggle:hover {
+    color: #6BB6E3;
+    border-color: #6BB6E3;
+}
+html[data-theme="dark"] .publications ol.bibliography li .abbr abbr {
+    background-color: #4FA3D1;
+}
+html[data-theme="dark"] .publications ol.bibliography li .bibtex-content pre {
+    background: #2A2A2A;
+    border-color: #444;
+    color: #E6E6E6;
+}
+html[data-theme="dark"] .publications ol.bibliography li .teaser {
+    background: #2A2A2A;
 }

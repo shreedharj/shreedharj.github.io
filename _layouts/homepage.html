@@ -20,6 +20,13 @@
     <!-- <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.ucscFavicon }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.ucscFavicon }}" type="image/png" /> -->
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
+    <script>
+      (function() {
+        if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
 
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
@@ -39,6 +46,7 @@
 
   </head>
   <body>
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
     <div class="wrapper">
       <header>
         
@@ -119,6 +127,7 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/dark-mode-toggle.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/publications.js" | relative_url }}"></script>
     {% if site.google_analytics %}
     <script>
