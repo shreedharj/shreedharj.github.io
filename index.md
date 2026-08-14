@@ -4,9 +4,9 @@ layout: homepage
 
 ## About Me
 
-Hi 👋🏼 I completed my B.S. in Computer Science with a Minor in Statistics at UC Santa Cruz, Baskin Engineering. I am very fortunate to be advised by [Prof. Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) at the [AEIA Lab](https://aiea-lab.github.io/), where my work focused on LLM trustworthiness and failure modes, and by [Prof. Xin (Eric) Wang](https://eric-xw.github.io/) at the [ERIC Lab](http://eric-lab.soe.ucsc.edu/people), where I studied reasoning LLMs and VLA safety evaluation. I am currently at the National Renewable Energy Laboratory working on physics-informed ML, sparse system identification, and discrepancy modeling for nonlinear dynamical systems. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
+Hi 👋🏼 I am an M.S. student in Robotics at the Carnegie Mellon University Robotics Institute, interested in building safe and adaptive robotic systems that can operate reliably under uncertainty.
 
-<p><strong style="color:#1769AA;">I’m currently applying to EECS and Robotics MS/PhD programs for Fall 2026.</strong></p>
+Previously, I completed my B.S. in Computer Science with a Minor in Statistics at UC Santa Cruz, where I was fortunate to work with Prof. [Leilani Gilpin](https://people.ucsc.edu/~lgilpin/) at the [AEIA Lab](https://aiea-lab.github.io/) on LLM trustworthiness and interpretability, and [Prof. Xin (Eric) Wang](https://eric-xw.github.io/) at the [ERIC Lab](http://eric-lab.soe.ucsc.edu/people) on reasoning-model and VLA safety evaluation. I also conducted research at the National Renewable Energy Laboratory, developing physics-informed and interpretable models of nonlinear dynamical systems. Outside of research, I enjoy backpacking and practicing my wilderness EMT skills.
 
 
 ## Research Interests
